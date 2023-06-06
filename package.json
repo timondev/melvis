@@ -4,15 +4,15 @@
 	"version": "1.0.0",
 	"private": true,
 	"bugs": {
-    "email": "hello@timon.digital",
-    "url": "https://github.com/timondev/melvis/issues"
-  },
-  "license": "Apache-2.0",
-  "author": {
-    "name": "TimonDEV",
-    "email": "hello@timon.digital",
-    "url": "https://tmn.dev"
-  },
+		"email": "hello@timon.digital",
+		"url": "https://github.com/timondev/melvis/issues"
+	},
+	"license": "Apache-2.0",
+	"author": {
+		"name": "TimonDEV",
+		"email": "hello@timon.digital",
+		"url": "https://tmn.dev"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/timondev/melvis.git"
@@ -30,7 +30,7 @@
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-auto": "^2.0.0",
+		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
