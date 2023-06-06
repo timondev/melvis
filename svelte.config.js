@@ -1,7 +1,8 @@
-import type { Config } from '@sveltejs/kit';
+import { vitePreprocess } from '@sveltejs/kit/vite';
 import adapter from '@sveltejs/adapter-static';
 
-const config: Config = {
+const config = {
+	preprocess: [vitePreprocess()],
 	kit: {
 		adapter: adapter({
 			pages: 'build',
