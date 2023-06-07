@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
   import { ArcRotateCamera, Engine, HemisphericLight, MeshBuilder, Scene, Vector3 } from "@babylonjs/core";
+	import { isVRSupported } from "$lib/webxr.lib";
 
   let canvas: HTMLCanvasElement;
   let engine: Engine;
@@ -17,7 +18,7 @@
     MeshBuilder.CreateGround("ground", {width: 6, height: 6}, scene);
   }
 
-  onMount(() => {
+  onMount(async () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -29,6 +30,12 @@
     camera.attachControl(canvas, true);
 
     createEnvironment(scene);
+
+    if(await isVRSupported()) {
+      await scene.createDefaultXRExperienceAsync();
+    } else {
+      console.log('VR is not supported');
+    }
 
     engine.runRenderLoop(() => {
       scene.render();
