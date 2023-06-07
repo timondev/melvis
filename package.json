@@ -29,6 +29,7 @@
 		"format": "prettier --plugin-search-dir . --write ."
 	},
 	"devDependencies": {
+		"@babylonjs/core": "^6.6.1",
 		"@playwright/test": "^1.28.1",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
