@@ -1,3 +1,3 @@
 export const prerender = true;
 
-import '$lib/reset.css';
+import '$lib/css/reset.css';
