@@ -7,11 +7,13 @@ export const createMainScene = (engine: Engine) => {
 	// Dim the light a small amount - 0 to 1
 	light.intensity = 0.7;
 
-	const sphere = MeshBuilder.CreateSphere('sphere', { diameter: 2, segments: 32 }, scene);
+	const sphere = MeshBuilder.CreateSphere('sphere', { diameter: 0.5, segments: 32 }, scene);
 	// Move the sphere upward 1/2 its height
 	sphere.position.y = 1;
-	// Built-in 'ground' shape.
-	MeshBuilder.CreateGround('ground', { width: 6, height: 6 }, scene);
+
+	scene.createDefaultEnvironment({
+		createGround: false
+	});
 
 	return scene;
 };
