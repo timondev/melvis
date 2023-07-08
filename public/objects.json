@@ -1,0 +1,386 @@
+{
+  "small_door": {
+    "position": [-387.75, -90.24, 303.7],
+    "size": [50.0, 80.0, 50.0],
+    "description": {
+      "de": "Eine kleine Tür, die ins Unbekannte führt.",
+      "en": "A small door leading into the unknown."
+    }
+  },
+  "purple_flower": {
+    "position": [-392.65, -215.37, 220.27],
+    "size": [150.0, 50.0, 150.0],
+    "description": {
+      "de": "Eine lila Blume, umgeben von lila Gras.",
+      "en": "A purple flower surrounded by purple grass."
+    }
+  },
+  "path_to_blue_house": {
+    "position": [-484.22, -58.68, -106.38],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein kleiner Weg, der zu einem blauen Haus führt.",
+      "en": "A small path leading to a blue house."
+    }
+  },
+  "blue_hen_house": {
+    "position": [-173.52, 55.11, 464.79],
+    "size": [70.0, 200.0, 50.0],
+    "description": {
+      "de": "Ein blauer Hühnerstall in Form einer Schalotte mit braunem Dach.",
+      "en": "A blue hen house formed a shallot with a brown roof."
+    }
+  },
+  "pink_cherry_blossom_tree": {
+    "position": [260.99, 401.36, 141.88],
+    "size": [400.0, 400.0, 400.0],
+    "description": {
+      "de": "Ein rosa Kirschblütenbaum.",
+      "en": "A pink cherry blossom tree."
+    }
+  },
+  "pink_cherry_blossom_tree_2": {
+    "position": [156.49, 416.19, -288.41],
+    "size": [400.0, 400.0, 400.0],
+    "description": {
+      "de": "Ein weiterer rosa Kirschblütenbaum.",
+      "en": "Another pink cherry blossom tree."
+    }
+  },
+  "path_between_houses": {
+    "position": [485.61, -204.56, -10.53],
+    "size": [80.0, 300.0, 300.0],
+    "description": {
+      "de": "Ein kleiner Weg zwischen Gebäuden, der zu einem blauen Tier im Hintergrund führt.",
+      "en": "A small path between buildings leading to a blue animal in the far background."
+    }
+  },
+  "small_house_with_green_roof": {
+    "position": [45.46, 36.7, -495.96],
+    "size": [100.0, 100.0, 100.0],
+    "description": {
+      "de": "Ein kleines Haus mit einem grün überwucherten Dach.",
+      "en": "A small house with a green overgrown roof."
+    }
+  },
+  "entrance_round_house": {
+    "position": [451.37, 7.24, -212.85],
+    "size": [50.0, 80.0, 50.0],
+    "description": {
+      "de": "Ein Eingang zu einem runden Haus mit einem grünen Tuch, das den Eingang bedeckt.",
+      "en": "An entrance to a round house with a green cloth covering the entrance."
+    }
+  },
+  "tower_background": {
+    "position": [32.85, 216.82, 448.27],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein grauer Turm im fernen Hintergrund, der das Gebäude im Vordergrund überragt.",
+      "en": "A gray tower in the far background looking over the building upfront."
+    }
+  },
+  "spruce_tree": {
+    "position": [-275.03, 254.6, 356.76],
+    "size": [100.0, 350.0, 50.0],
+    "description": {
+      "de": "Eine große Fichte.",
+      "en": "A large spruce tree."
+    }
+  },
+  "entrance_large_house": {
+    "position": [-346.04, -74.0, -352.1],
+    "size": [50.0, 90.0, 50.0],
+    "description": {
+      "de": "Ein Eingang zu einem großen Haus mit zwei Stockwerken und einer rosa Lampe über der Tür.",
+      "en": "An entrance to a large house with two floors and a pink light above the door."
+    }
+  },
+  "window_large_house": {
+    "position": [-341.15, 161.93, -326.27],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein kleines Fenster mit Blick in den zweiten Stock eines großen Hauses.",
+      "en": "A small window looking into the second floor of a large house."
+    }
+  },
+  "pink_cherry_blossom_tree_far_back": {
+    "position": [497.62, 43.83, 4.44],
+    "size": [50.0, 80.0, 50.0],
+    "description": {
+      "de": "Ein Kirschblütenbaum ganz hinten in der Straße.",
+      "en": "A cherry blossom tree in the far back of the road."
+    }
+  },
+  "round_house": {
+    "position": [364.21, 67.68, 334.09],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein rundes Haus hinter einem Kirschblütenbaum.",
+      "en": "A round house behind a cherry blossom tree."
+    }
+  },
+  "small_garden": {
+    "position": [295.92, -90.09, 391.7],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein kleiner Garten vor einem runden Haus.",
+      "en": "A small garden in front of a round house."
+    }
+  },
+  "entrance_narrow_house": {
+    "position": [29.65, -57.31, 494.9],
+    "size": [50.0, 80.0, 50.0],
+    "description": {
+      "de": "Ein Eingang zu einem schmalen Haus mit zwei Stockwerken.",
+      "en": "An entrance to a narrow house with two floors."
+    }
+  },
+  "small_spruce_tree": {
+    "position": [154.55, 20.07, 474.62],
+    "size": [50.0, 150.0, 50.0],
+    "description": {
+      "de": "Eine kleinere runde Fichte mit spitzem Wipfel.",
+      "en": "A smaller rounded spruce tree with a pointed top."
+    }
+  },
+  "large_rounded_spruce_tree": {
+    "position": [-384.04, 49.19, 318.5],
+    "size": [80.0, 200.0, 50.0],
+    "description": {
+      "de": "Eine große Fichte mit einem spitzen Wipfel.",
+      "en": "A large spruce tree with a pointed top."
+    }
+  },
+  "small_hen_house": {
+    "position": [-305.29, -42.41, 392.73],
+    "size": [50.0, 100.0, 50.0],
+    "description": {
+      "de": "Ein kleiner blauer Hühnerstall mit einem Fenster.",
+      "en": "A small blue hen house with a window"
+    }
+  },
+  "five_steps": {
+    "position": [10.99, -213.32, -451.0],
+    "size": [150.0, 100.0, 150.0],
+    "description": {
+      "de": "Fünf Stufen auf dem Weg.",
+      "en": "Five steps on the path."
+    }
+  },
+  "small_lamp_post_1": {
+    "position": [220.22, -193.88, -393.49],
+    "size": [30.0, 30.0, 30.0],
+    "description": {
+      "de": "Ein kleiner Laternenpfahl.",
+      "en": "A small lamp post."
+    }
+  },
+  "small_lamp_post_2": {
+    "position": [410.86, -172.77, -208.82],
+    "size": [30.0, 30.0, 30.0],
+    "description": {
+      "de": "Ein kleiner Laternenpfahl.",
+      "en": "A small lamp post."
+    }
+  },
+  "window_medium_house": {
+    "position": [295.96, 26.7, -401.22],
+    "size": [50.0, 100.0, 50.0],
+    "description": {
+      "de": "Ein Fenster hinter einem Kirschblütenbaum, das zu einem mittelgroßen Haus gehört.",
+      "en": "A window behind the cherry blossom tree belonging to a medium sized house."
+    }
+  },
+  "porch_medium_house": {
+    "position": [161.27, -23.17, -471.48],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Eine kleine Veranda mit einem Torbogen, die zu einem mittelgroßen Haus gehört.",
+      "en": "A small porch with an archway belonging to a medium sized house."
+    }
+  },
+  "pink_bush": {
+    "position": [-478.01, -141.34, -28.69],
+    "size": [100.0, 80.0, 100.0],
+    "description": {
+      "de": "Ein rosa Rundstrauch in einem Holzbehälter",
+      "en": "A pink round bush inside a wooden container"
+    }
+  },
+  "round_window_right": {
+    "position": [-189.44, -11.36, -462.02],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein rundes Fenster auf der rechten Seite der Fassade.",
+      "en": "A round window to the right of the facade."
+    }
+  },
+  "round_window_left": {
+    "position": [-116.19, -9.36, -485.24],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein rundes Fenster auf der linken Seite der Fassade.",
+      "en": "A round window to the left of the facade."
+    }
+  },
+  "round_window_top": {
+    "position": [-137.71, 113.66, -466.27],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein rundes Fenster mit einem großen Strauch, der auf der Fensterbank hängt.",
+      "en": "A round window with a large bush hanging from the windowsill."
+    }
+  },
+  "side_large_house": {
+    "position": [-457.03, -4.54, -201.19],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Die Seite des großen Hauses mit einem Fenster.",
+      "en": "The side of the large house with a window."
+    }
+  },
+  "front_chimney_large_house": {
+    "position": [-310.69, 269.19, -283.16],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein spitzer Schornstein mit einem kleineren Schornstein weiter hinten.",
+      "en": "A pointy chimney with a smaller one further back."
+    }
+  },
+  "round_bush_front_large_house": {
+    "position": [-147.66, -214.2, -425.72],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein runder grüner Strauch in einem großen Topf an der Seite des Hauses.",
+      "en": "A round green bush in a large pot to the side of the road."
+    }
+  },
+  "two_steps": {
+    "position": [-228.81, -389.27, 213.74],
+    "size": [140.0, 50.0, 140.0],
+    "description": {
+      "de": "Zwei Stufen auf dem Weg mit einem grünen Rundbusch auf jeder Seite.",
+      "en": "Two steps on the path with a round green bush on either side."
+    }
+  },
+  "green_entrance_door": {
+    "position": [434.32, -23.45, 244.53],
+    "size": [50.0, 100.0, 50.0],
+    "description": {
+      "de": "Eine grüne Eingangstür mit einem eingelassenen Fenster.",
+      "en": "A green entrance door with a window instilled."
+    }
+  },
+  "entrance_left_house": {
+    "position": [-490.04, -84.56, 46.29],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein leicht zugewachsener Eingang zu einem großen Haus.",
+      "en": "A slightly overgrown entrance to a large house."
+    }
+  },
+  "upper_window_left_house": {
+    "position": [-494.39, 29.95, 60.52],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein großes Fenster im zweiten Stock eines großen Hauses.",
+      "en": "A large window on the second floor of a large house."
+    }
+  },
+  "padroting_window": {
+    "position": [-453.14, -55.08, 202.23],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein Fenster, das aus der Wand an der Seite eines großen Hauses ragt.",
+      "en": "A window padroting from the wall on the side of a large house."
+    }
+  },
+  "tower_large_house": {
+    "position": [-456.67, 198.28, 109.65],
+    "size": [80.0, 150.0, 80.0],
+    "description": {
+      "de": "Ein großer runder Turm auf dem Dach eines großen Hauses.",
+      "en": "A large circular tower ontop of a large house."
+    }
+  },
+  "the_sun": {
+    "position": [-235.94, 404.96, 171.99],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Die Sonne.",
+      "en": "The sun."
+    }
+  },
+  "flowerbed": {
+    "position": [-0.45, -472.67, 161.34],
+    "size": [200.0, 50.0, 200.0],
+    "description": {
+      "de": "Ein Blumenbeet aus Sträuchern.",
+      "en": "A flowerbed from shrubs"
+    }
+  },
+  "flowers_besides_road": {
+    "position": [-151.49, -212.89, 425.01],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Blumen am Straßenrand auf einem kleinen Gemäuer.",
+      "en": "Flowers on the side of the road on a small wall."
+    }
+  },
+  "patch_grass": {
+    "position": [386.14, -226.26, 221.13],
+    "size": [200.0, 100.0, 200.0],
+    "description": {
+      "de": "Ein kleiner Grasfleck mit verschiedenfarbigen Blumen",
+      "en": "A small patch of grass with differently colored flowers"
+    }
+  },
+  "small_lamp_post_3": {
+    "position": [-410.12, -231.27, -167.33],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein kleiner Laternenpfahl.",
+      "en": "A small lamp post."
+    }
+  },
+  "small_lamp_post_4": {
+    "position": [-208.26, -144.69, -430.27],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein kleiner Laternenpfahl.",
+      "en": "A small lamp post."
+    }
+  },
+  "background_house": {
+    "position": [210.98, 71.92, 446.24],
+    "size": [70.0, 50.0, 70.0],
+    "description": {
+      "de": "Das Dach eines entfernt liegenden Hauses.",
+      "en": "The roof of a house in the distance."
+    }
+  },
+  "road": {
+    "position": [24.14, -226.03, 521.59],
+    "size": [300.0, 50.0, 600.0],
+    "description": {
+      "de": "Ein Pfad.",
+      "en": "A path."
+    }
+  },
+  "small_section_path": {
+    "position": [385.66, -135.43, 286.31],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Ein kleiner Abschnitt eines Pfads mit Stufen der zu einem Haus führt.",
+      "en": "A small section of path with steps leading to a house."
+    }
+  },
+  "front_yard": {
+    "position": [-336.58, -212.86, -300.53],
+    "size": [50.0, 50.0, 50.0],
+    "description": {
+      "de": "Der Vorgarten eines Hauses.",
+      "en": "The front garden of a house."
+    }
+  }
+}

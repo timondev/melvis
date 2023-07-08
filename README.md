@@ -1,172 +1,47 @@
-<a name="readme-top"></a>
+# Svelte + TS + Vite
 
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+This template should help get you started developing with Svelte and TypeScript in Vite.
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/timondev/melvis">
-    <img src="static/logo.svg" alt="The Melvis logo is a text based logo consisting of the symbol 'M' in a serif font and the rest in a more playful display font." width="189" height="48">
-  </a>
-  <p align="center">
-    Metaverse experience tailored for the visually impaired.
-    <br />
-    <a href="https://github.com/timondev/melvis"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/timondev/melvis">View Demo</a>
-    ·
-    <a href="https://github.com/timondev/melvis/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/timondev/melvis/issues">Request Feature</a>
-  </p>
-</div>
+## Recommended IDE Setup
 
+[VS Code](https://code.visualstudio.com/) + [Svelte](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode).
 
+## Need an official Svelte framework?
 
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
-  </ol>
-</details>
+Check out [SvelteKit](https://github.com/sveltejs/kit#readme), which is also powered by Vite. Deploy anywhere with its serverless-first approach and adapt to various platforms, with out of the box support for TypeScript, SCSS, and Less, and easily-added support for mdsvex, GraphQL, PostCSS, Tailwind CSS, and more.
 
+## Technical considerations
 
+**Why use this over SvelteKit?**
 
-<!-- ABOUT THE PROJECT -->
-## About The Project
+- It brings its own routing solution which might not be preferable for some users.
+- It is first and foremost a framework that just happens to use Vite under the hood, not a Vite app.
 
-Melvis is the successor to a prototype that demonstrated how a metaverse could be created for both the visually impaired and the sighted. It's purpose is to provide assistive tools to both identify and explain 3D scenes through auditory and haptic means. The aim is to enable visually impaired people to use any type of metaverse without the need for assistance from others.
+This template contains as little as possible to get started with Vite + TypeScript + Svelte, while taking into account the developer experience with regards to HMR and intellisense. It demonstrates capabilities on par with the other `create-vite` templates and is a good starting point for beginners dipping their toes into a Vite + Svelte project.
 
-It is based on the following technologies:
+Should you later need the extended capabilities and extensibility provided by SvelteKit, the template has been structured similarly to SvelteKit so that it is easy to migrate.
 
-[![svelte][svelte.dev]][svelte-url] [![babylon][babylonjs.com]][babylon-url]
+**Why `global.d.ts` instead of `compilerOptions.types` inside `jsconfig.json` or `tsconfig.json`?**
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Setting `compilerOptions.types` shuts out all other types not explicitly listed in the configuration. Using triple-slash references keeps the default TypeScript setting of accepting type information from the entire workspace, while also adding `svelte` and `vite/client` type information.
 
+**Why include `.vscode/extensions.json`?**
 
+Other templates indirectly recommend extensions via the README, but this file allows VS Code to prompt the user to install the recommended extension upon opening the project.
 
-<!-- GETTING STARTED -->
-## Getting Started
+**Why enable `allowJs` in the TS template?**
 
-This guide will take you through the steps required to install and use Melvis. Be aware of the requirements that are needed to use Melvis.
+While `allowJs: false` would indeed prevent the use of `.js` files in the project, it does not prevent the use of JavaScript syntax in `.svelte` files. In addition, it would force `checkJs: false`, bringing the worst of both worlds: not being able to guarantee the entire codebase is TypeScript, and also having worse typechecking for the existing JavaScript. In addition, there are valid use cases in which a mixed codebase may be relevant.
 
-### Prerequisites
+**Why is HMR not preserving my local component state?**
 
-Melvis is built on top of node16 and it's dependencies are loaded via npm. The following instructions assume that node is installed and that your local development environment has access to npm. To upgrade to the latest version of npm, you can use the following command:
+HMR state preservation comes with a number of gotchas! It has been disabled by default in both `svelte-hmr` and `@sveltejs/vite-plugin-svelte` due to its often surprising behavior. You can read the details [here](https://github.com/rixo/svelte-hmr#svelte-hmr).
 
-```sh
-npm install npm@latest -g
+If you have state that's important to retain within a component, consider creating an external store which would not be replaced by HMR.
+
+```ts
+// store.ts
+// An extremely simple external store
+import { writable } from 'svelte/store'
+export default writable(0)
 ```
-
-Use the following command to check your node version:
-
-```sh
-node --version
-```
-
-### Installation
-
-1. Clone the repo
-   ```sh
-   git clone https://github.com/timondev/melvis.git
-   ```
-3. Install NPM packages
-   ```sh
-   cd melvis && npm install
-   ```
-4. Run the local deployment:
-   ```sh
-   npm run dev
-   ```
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] WebXR space
-- [ ] Full support for assistive screen readers
-- [ ] Support distance approximation algorithm
-
-See the [open issues](https://github.com/timondev/melvis/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- CONTRIBUTING -->
-## Contributing
-
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request.
-Don't forget to star the project! Thanks again!
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the Apache License, Version 2.0. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
-
-There are currently no acknowledgements.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-[contributors-shield]: https://img.shields.io/github/contributors/timondev/melvis?style=for-the-badge
-[contributors-url]: https://github.com/timondev/melvis/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/timondev/melvis?style=for-the-badge
-[forks-url]: https://github.com/timondev/melvis/network/members
-[stars-shield]: https://img.shields.io/github/stars/timondev/melvis?style=for-the-badge
-[stars-url]: https://github.com/timondev/melvis/stargazers
-[issues-shield]: https://img.shields.io/github/issues/timondev/melvis?style=for-the-badge
-[issues-url]: https://github.com/timondev/melvis/issues
-[license-shield]: https://img.shields.io/github/license/timondev/melvis?style=for-the-badge
-[license-url]: https://github.com/timondev/melvis/blob/master/LICENSE.txt
-[svelte.dev]: https://img.shields.io/badge/Svelte-4A4A55?style=for-the-badge&logo=svelte&logoColor=FF3E00
-[svelte-url]: https://svelte.dev/
-[babylonjs.com]: https://img.shields.io/badge/Babylon.js-BB464B?style=for-the-badge&logoColor=BB464B
-[babylon-url]: https://doc.babylonjs.com/
